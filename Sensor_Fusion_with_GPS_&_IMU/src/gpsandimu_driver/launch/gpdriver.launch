@@ -1,0 +1,6 @@
+<launch> 
+        <arg name ="port"/>
+        <node name="GPS" pkg="gpsandimu_driver" type="driver.py" output="screen" >
+         <param name="port_number" value="$(arg port)"/>
+        </node>
+</launch> 
